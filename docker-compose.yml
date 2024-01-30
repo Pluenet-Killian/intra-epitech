@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  docs:
+    build: 
+      context: ./apps/docs
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./apps/docs:/usr/src/docs
+      - docs_node_modules:/usr/src/docs/node_modules
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./apps/web:/usr/src/web
+      - web_node_modules:/usr/src/web/node_modules
+
+volumes:
+  docs_node_modules:
+  web_node_modules:
