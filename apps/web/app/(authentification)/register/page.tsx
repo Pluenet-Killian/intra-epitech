@@ -6,7 +6,6 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
-import Image from "next/image"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -17,7 +16,7 @@ export default function RegisterPage() {
             <Card className="mt-2 border-none shadow-none">
             <CardHeader>
                 <CardTitle>Veuillez-vous enregistrer</CardTitle>
-                <CardDescription>Enregistrer-vous afin d'avoir accès à l'intranet d'epitech</CardDescription>
+                <CardDescription>Enregistrer-vous afin d&apos;avoir accès à l&apos;intranet d&apos;epitech</CardDescription>
             </CardHeader>
             <CardContent>
                 <Label htmlFor="email">Email</Label>
@@ -33,7 +32,7 @@ export default function RegisterPage() {
             </CardContent>
             <CardFooter className="flex items-center justify-end space-x-2">
                 <Button className="bg-transparent text-black hover:bg-transparent">Se connecter</Button>
-                <Button className="bg-[#0069B3] hover:bg-[#0161A4]">S'enregistrer</Button>
+                <Button className="bg-[#0069B3] hover:bg-[#0161A4]">S&apos;enregistrer</Button>
             </CardFooter>
             </Card>
         </>

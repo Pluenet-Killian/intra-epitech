@@ -16,7 +16,7 @@ export default function LoginPage() {
             <Card className="mt-2 border-none shadow-none">
             <CardHeader>
                 <CardTitle>Veuillez-vous connecter</CardTitle>
-                <CardDescription>Connectez-vous afin d'avoir accès à l'intranet d'epitech</CardDescription>
+                <CardDescription>Connectez-vous afin d&apos;avoir accès à l&apos;intranet d&apos;epitech</CardDescription>
             </CardHeader>
             <CardContent>
                 <Label htmlFor="email">Email</Label>
@@ -27,7 +27,7 @@ export default function LoginPage() {
                 <Input className="mt-2 focus:border-none" type="password" name="password"/>
             </CardContent>
             <CardFooter className="flex items-center justify-end space-x-2">
-                <Button className="bg-transparent text-black hover:bg-transparent">S'enregistrer</Button>
+                <Button className="bg-transparent text-black hover:bg-transparent">S&apos;enregistrer</Button>
                 <Button className="bg-[#0069B3] hover:bg-[#0161A4]">Se connecter</Button>
             </CardFooter>
             </Card>
